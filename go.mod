@@ -1,4 +1,4 @@
-module testapi
+module github.com/iuan95/testapi
 
 go 1.21.3
 

@@ -2,19 +2,21 @@ package controllers
 
 import (
 	"context"
-	"fmt"
-	"testapi/models"
 
 	"github.com/iuan95/testapi/db"
+	"github.com/iuan95/testapi/models"
 )
 
 type UserParams struct{
+	
+
+
 	Name string `json:"name"`
 	Description string `json:"description"`
 }
 
 func (q *db.Queries) CreateUser(ctx context.Context, user UserParams) ( error){
-	fmt.Println("Asd")
+
 	err:=q.DB.Exec(ctx,"INSRT INTO items (name, description) VALUES($1, $2)", user.Name, user.Description)
 	return  err
 }

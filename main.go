@@ -2,9 +2,10 @@ package main
 
 import (
 	"context"
-	"testapi/db"
 
 	"github.com/gofiber/fiber/v2"
+
+	"github.com/iuan95/testapi/db"
 )
 
 
